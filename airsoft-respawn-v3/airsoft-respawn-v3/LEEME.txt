@@ -1,0 +1,10 @@
+AIRSOFT RESPAWN V3 - ANDROID Y IPHONE
+
+1. Publica esta carpeta en un servidor HTTPS (por ejemplo GitHub Pages).
+2. Abre index.html en Safari (iPhone) o Chrome (Android).
+3. Autoriza la camara y selecciona Respawn con QR en base.
+4. Imprime cartel-base-imprimible.png y colocala en la base.
+5. En modo tiempo, el respawn termina al agotarse el contador.
+6. En modo QR, solo termina tras escanear el codigo esperado.
+
+COMPATIBILIDAD: usa BarcodeDetector donde este disponible y jsQR como alternativa, descargada desde jsDelivr cuando se necesite. El modo QR alternativo requiere internet al menos la primera vez y puede requerir internet nuevamente. La camara requiere HTTPS y permiso. El sonido puede detenerse si el sistema suspende el navegador. Un QR fijo puede fotografiarse y no demuestra presencia fisica.
