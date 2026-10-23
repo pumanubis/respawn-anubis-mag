@@ -1,0 +1,11 @@
+RESPAWN ANUBIS MAG V5
+
+Subir TODOS estos archivos a la RAÍZ del repositorio de GitHub Pages. No subir la carpeta contenedora.
+
+1. Abre la web con internet y pulsa PREPARAR USO SIN INTERNET.
+2. Instala la PWA en el teléfono desde el navegador.
+3. El organizador genera QR de configuración y QR de base; imprime ambos.
+4. Cada jugador escanea el QR de configuración antes de entrar al campo.
+5. Prueba modo avión, cámara, QR y alarmas en CADA modelo de teléfono.
+
+LIMITACIONES: el panel de organizador es local y NO está protegido contra terceros. No hay sincronización remota ni autenticación. Para garantizar que solo el organizador pueda emitir QR válidos sin conexión se requiere validación con firmas digitales y distribución de clave pública, todavía no implementada. El lector QR de respaldo jsQR necesita descargarse una vez con conexión; en Safari/iOS verifica su funcionamiento offline. El sonido en segundo plano no es garantizable en PWA.
