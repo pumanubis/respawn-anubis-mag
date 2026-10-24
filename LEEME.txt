@@ -1,11 +1,19 @@
-RESPAWN ANUBIS MAG V5
+RESPAWN ANUBIS MAG V6 — versión de prueba
 
-Subir TODOS estos archivos a la RAÍZ del repositorio de GitHub Pages. No subir la carpeta contenedora.
+1. Guarda una copia de la V5 antes de instalar.
+2. Sube a la RAÍZ de tu repositorio GitHub: index.html, v6admin.js, qrgen.js, sw.js, manifest.webmanifest, icon.svg.
+3. Espera la publicación en Settings > Pages y actualiza la aplicación en todos los celulares.
+4. En el primer celular administrador, abre Panel de administrador, elige una contraseña de 12 o más caracteres y pulsa CREAR CREDENCIAL. Se descargará ANUBIS-CREDENCIAL-PRIVADA.json cifrada. No la subas a GitHub.
+5. En cada celular de administrador adicional, importa esa credencial y escribe la MISMA contraseña. Pulsa DESBLOQUEAR.
+6. Crea partida; imprime el QR de configuración y el QR de base. Los jugadores escanean el QR de configuración antes de comenzar.
+7. Prueba en modo avión con dos celulares: configura partida, escanea QR incorrecto y correcto.
 
-1. Abre la web con internet y pulsa PREPARAR USO SIN INTERNET.
-2. Instala la PWA en el teléfono desde el navegador.
-3. El organizador genera QR de configuración y QR de base; imprime ambos.
-4. Cada jugador escanea el QR de configuración antes de entrar al campo.
-5. Prueba modo avión, cámara, QR y alarmas en CADA modelo de teléfono.
-
-LIMITACIONES: el panel de organizador es local y NO está protegido contra terceros. No hay sincronización remota ni autenticación. Para garantizar que solo el organizador pueda emitir QR válidos sin conexión se requiere validación con firmas digitales y distribución de clave pública, todavía no implementada. El lector QR de respaldo jsQR necesita descargarse una vez con conexión; en Safari/iOS verifica su funcionamiento offline. El sonido en segundo plano no es garantizable en PWA.
+SEGURIDAD Y LIMITACIONES:
+- Los QR de base están firmados digitalmente y se comprueban sin internet. La contraseña protege la clave privada exportada en la credencial cifrada.
+- En la PRIMERA carga de configuración, cada jugador debe comprobar físicamente que el QR procede de un organizador legítimo. Si acepta un QR falso antes del oficial, puede confiar en una clave ajena (problema de primera confianza).
+- La app no sincroniza automáticamente nuevas partidas ni revocaciones mientras no hay internet.
+- Compartir contraseña y credencial da a otros administradores la misma autoridad; no hay revocación individual. Si se filtran ambas, crea una nueva identidad y redistribúyela.
+- Un jugador con control del navegador puede manipular su propia sesión local. No es un sistema antitrampas inviolable.
+- iOS/Android pueden limitar audio, cámara y temporizadores en segundo plano.
+- El lector alternativo jsQR requiere una preparación previa con internet en los equipos que no admiten BarcodeDetector.
+- No se ha validado en todos los modelos de Android/iPhone. Probar antes de partidas oficiales.
