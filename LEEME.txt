@@ -1,23 +1,9 @@
-RESPAWN ANUBIS MAG V7.1 — PARTIDAS PREPARADAS
+ANUBIS MAG V7.2 — INTERFAZ COMPACTA
 
-DÍA ANTERIOR
-1. Entra al panel Administrador y desbloquéalo.
-2. Escribe el nombre, selecciona vidas ilimitadas (predeterminado) o limitadas.
-3. Pulsa GENERAR CÓDIGOS DE PARTIDA UNA SOLA VEZ.
-4. Imprime ambos códigos: CONFIGURACIÓN (para cada jugador) y BASE (para colocar en la base).
-5. Comprueba que ambos se leen y que la partida aparece en la lista Partidas preparadas.
-6. Si necesitas reimprimir, selecciónala y pulsa MOSTRAR QR GUARDADOS. No generes otra.
+Se simplificó la pantalla para mostrar principalmente botones y controles.
+Se mantienen los identificadores, archivos JS y lógica de V7.1.
+Se ocultaron párrafos explicativos; los avisos operativos permanecen visibles.
 
-DÍA DE JUEGO
-1. Coloca el QR de BASE impreso el día anterior.
-2. Cada jugador abre ANUBIS MAG V7.1 y escanea el QR de CONFIGURACIÓN impreso.
-3. No es necesario generar ni imprimir QR en el campo.
-4. Prueba tiempo, base, alarma, vidas y emergencia con y sin internet.
-
-NOTAS
-- Los QR se guardan localmente SOLO en el dispositivo administrador que los generó.
-- No borres datos del sitio, no desinstales la PWA y no utilices navegación privada para prepararlos.
-- Conservar los QR impresos es importante; para reimprimir necesitas el mismo dispositivo.
-- No compartas la credencial privada administrativa ni la subas a GitHub.
-- Una nueva partida crea QR diferentes; NO la generes al llegar al campo.
-- Las vidas se cuentan por dispositivo, sin sincronización central ni protección antifraude robusta.
+INSTALACIÓN: copia de seguridad, sube todos los archivos a la raíz de GitHub Pages y verifica V7.2.
+No borres datos de la PWA ni desinstales: puedes perder credenciales y partidas guardadas.
+Prueba antes de jugar: QR preparado, temporizador, vidas, alarma, emergencia y modo avión.

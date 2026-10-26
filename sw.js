@@ -1,4 +1,4 @@
-const CACHE='anubis-v7-1-local-1';
+const CACHE='anubis-v7-2-local-1';
 const FILES=['./','./index.html','./qrgen.js','./v6admin.js','./icon.svg','./manifest.webmanifest'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('anubis-v')&&k!==CACHE&&k!=='anubis-v5-qr').map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
