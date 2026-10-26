@@ -1,19 +1,23 @@
-RESPAWN ANUBIS MAG V6 — versión de prueba
+RESPAWN ANUBIS MAG V7.1 — PARTIDAS PREPARADAS
 
-1. Guarda una copia de la V5 antes de instalar.
-2. Sube a la RAÍZ de tu repositorio GitHub: index.html, v6admin.js, qrgen.js, sw.js, manifest.webmanifest, icon.svg.
-3. Espera la publicación en Settings > Pages y actualiza la aplicación en todos los celulares.
-4. En el primer celular administrador, abre Panel de administrador, elige una contraseña de 12 o más caracteres y pulsa CREAR CREDENCIAL. Se descargará ANUBIS-CREDENCIAL-PRIVADA.json cifrada. No la subas a GitHub.
-5. En cada celular de administrador adicional, importa esa credencial y escribe la MISMA contraseña. Pulsa DESBLOQUEAR.
-6. Crea partida; imprime el QR de configuración y el QR de base. Los jugadores escanean el QR de configuración antes de comenzar.
-7. Prueba en modo avión con dos celulares: configura partida, escanea QR incorrecto y correcto.
+DÍA ANTERIOR
+1. Entra al panel Administrador y desbloquéalo.
+2. Escribe el nombre, selecciona vidas ilimitadas (predeterminado) o limitadas.
+3. Pulsa GENERAR CÓDIGOS DE PARTIDA UNA SOLA VEZ.
+4. Imprime ambos códigos: CONFIGURACIÓN (para cada jugador) y BASE (para colocar en la base).
+5. Comprueba que ambos se leen y que la partida aparece en la lista Partidas preparadas.
+6. Si necesitas reimprimir, selecciónala y pulsa MOSTRAR QR GUARDADOS. No generes otra.
 
-SEGURIDAD Y LIMITACIONES:
-- Los QR de base están firmados digitalmente y se comprueban sin internet. La contraseña protege la clave privada exportada en la credencial cifrada.
-- En la PRIMERA carga de configuración, cada jugador debe comprobar físicamente que el QR procede de un organizador legítimo. Si acepta un QR falso antes del oficial, puede confiar en una clave ajena (problema de primera confianza).
-- La app no sincroniza automáticamente nuevas partidas ni revocaciones mientras no hay internet.
-- Compartir contraseña y credencial da a otros administradores la misma autoridad; no hay revocación individual. Si se filtran ambas, crea una nueva identidad y redistribúyela.
-- Un jugador con control del navegador puede manipular su propia sesión local. No es un sistema antitrampas inviolable.
-- iOS/Android pueden limitar audio, cámara y temporizadores en segundo plano.
-- El lector alternativo jsQR requiere una preparación previa con internet en los equipos que no admiten BarcodeDetector.
-- No se ha validado en todos los modelos de Android/iPhone. Probar antes de partidas oficiales.
+DÍA DE JUEGO
+1. Coloca el QR de BASE impreso el día anterior.
+2. Cada jugador abre ANUBIS MAG V7.1 y escanea el QR de CONFIGURACIÓN impreso.
+3. No es necesario generar ni imprimir QR en el campo.
+4. Prueba tiempo, base, alarma, vidas y emergencia con y sin internet.
+
+NOTAS
+- Los QR se guardan localmente SOLO en el dispositivo administrador que los generó.
+- No borres datos del sitio, no desinstales la PWA y no utilices navegación privada para prepararlos.
+- Conservar los QR impresos es importante; para reimprimir necesitas el mismo dispositivo.
+- No compartas la credencial privada administrativa ni la subas a GitHub.
+- Una nueva partida crea QR diferentes; NO la generes al llegar al campo.
+- Las vidas se cuentan por dispositivo, sin sincronización central ni protección antifraude robusta.
