@@ -1,5 +1,5 @@
-const CACHE='anubis-v7-2-local-1';
-const FILES=['./','./index.html','./qrgen.js','./v6admin.js','./icon.svg','./manifest.webmanifest'];
+const CACHE='anubis-v7-3-1-logo-2';
+const FILES=['./','./index.html','./qrgen.js','./v6admin.js','./icon.svg','./icon-192.png','./icon-512.png','./logo-equipo.png','./manifest.webmanifest'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('anubis-v')&&k!==CACHE&&k!=='anubis-v5-qr').map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==self.location.origin)return;

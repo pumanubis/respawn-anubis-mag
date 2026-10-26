@@ -1,9 +1,7 @@
-ANUBIS MAG V7.2 — INTERFAZ COMPACTA
+RESPAWN ANUBIS MAG V7.3.1 — ESCUDO ORIGINAL SIN FONDO BLANCO
 
-Se simplificó la pantalla para mostrar principalmente botones y controles.
-Se mantienen los identificadores, archivos JS y lógica de V7.1.
-Se ocultaron párrafos explicativos; los avisos operativos permanecen visibles.
+El escudo enviado por el usuario se ha recortado para quitar el blanco exterior sin rediseñarlo. Está situado arriba, fuera de los botones y del cronómetro.
 
-INSTALACIÓN: copia de seguridad, sube todos los archivos a la raíz de GitHub Pages y verifica V7.2.
-No borres datos de la PWA ni desinstales: puedes perder credenciales y partidas guardadas.
-Prueba antes de jugar: QR preparado, temporizador, vidas, alarma, emergencia y modo avión.
+Se conserva la lógica de V7.2: QR, vidas, partidas preparadas, alarma, offline y emergencia.
+
+Sube TODOS los archivos de este ZIP a la raíz del repositorio GitHub Pages mediante Add file > Upload files y confirma Commit changes. No borres datos ni desinstales la PWA. Comprueba la versión en Chrome con ?v=7.3.1. El ícono instalado puede tardar en actualizarse por la caché del sistema.
